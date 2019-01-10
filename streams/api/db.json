@@ -24,6 +24,11 @@
       "title": "my stream 2",
       "description": "this is a great stream",
       "id": 5
+    },
+    {
+      "title": "my stream",
+      "description": "a great stream",
+      "id": 6
     }
   ]
 }
