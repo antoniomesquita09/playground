@@ -29,6 +29,17 @@
       "title": "my stream",
       "description": "a great stream",
       "id": 6
+    },
+    {
+      "title": "Stream 11/01",
+      "description": "new stream 11/01",
+      "id": 7
+    },
+    {
+      "title": "I created this stream",
+      "description": "This was made by me",
+      "userId": "109973825987938014737",
+      "id": 8
     }
   ]
 }
