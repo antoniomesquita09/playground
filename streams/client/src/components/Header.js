@@ -4,18 +4,27 @@ import GoogleAuth from './GoogleAuth';
 
 const Header = () => {
     return(
-        <div className='ui secondary pointing menu'>
-            <Link to='/' className='item'>
-                Streamy
-            </Link>
-            <div className='right menu'>
-                <Link to='/' className='item'>
-                    All Streams
-                </Link>
-                <GoogleAuth />
+        <nav className='navbar navbar-inverse'>
+            <div className='container-fluid'>
+                <div className='navbar-header'>
+                    <Link to='/' className='navbar-brand'>
+                    Streamy
+                    </Link>
+                </div>
+                <ul className='nav navbar-nav'>
+                    <li className='active'>
+                        <Link to='/'>
+                            All Streams
+                        </Link>
+                    </li>
+                </ul>
+                <ul className='nav navbar-nav navbar-right'>
+                    <li>
+                        <GoogleAuth />
+                    </li>
+                </ul>
             </div>
-
-        </div>
+        </nav>
     );
 };
 

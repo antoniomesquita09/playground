@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { fetchStreams } from '../../actions';
 
 class StreamList extends React.Component {
@@ -10,9 +11,9 @@ class StreamList extends React.Component {
     renderAdmin(stream){
         if(stream.userId === this.props.currentUserId){
             return (
-                <div className="right floated content">
-                    <button className="ui button primary">Edit</button>
-                    <button className="ui button negative">Delete</button>
+                <div className="btn btn-group">
+                    <button className="btn btn-warning">Edit</button>
+                    <button className="btn btn-danger">Delete</button>
                 </div>
             );
         }
@@ -21,22 +22,41 @@ class StreamList extends React.Component {
     renderList(){
         return this.props.streams.map(stream => {
             return (
-                <div ClassName="item" key={stream.id}>
-                    {this.renderAdmin(stream)}
-                    <i className="large middle aligned icon camera" />
-                    <div className="content">
-                        {stream.title}
-                        <div className="description">{stream.description}</div>
+                <div className="media" key={stream.id}>
+                    <span className="glyphicon glyphicon-play-circle" alt=""></span>
+                    <div className="media-body right-aligned">
+                        <h5>{stream.title}</h5>
+                        <p>{stream.description}</p>
                     </div>
+                    {this.renderAdmin(stream)}
                 </div>
+                
             );
         });
     }
+
+    renderCreate(){
+        if(this.props.isSignedIn){
+            return(
+                <div>
+                    <Link to='/streams/new' className="btn btn-success">
+                        Create Stream
+                    </Link>
+                </div>
+            );
+        }
+    }
+
     render(){
         return (
             <div>
                 <h2>Streams</h2>
-                <div className="ui celled list">{this.renderList()}</div>
+                <div className="container">{this.renderList()}</div>
+                <br />
+                <br />
+                <div className="container middle-aligned">
+                {this.renderCreate()}
+                </div>
             </div>
         );
     }
@@ -45,7 +65,8 @@ class StreamList extends React.Component {
 const mapStateToProps = (state) => {
     return {
         streams: Object.values(state.streams),
-        currentUserId: state.auth.userId
+        currentUserId: state.auth.userId,
+        isSignedIn: state.auth.isSignedIn
     };
 }
 
