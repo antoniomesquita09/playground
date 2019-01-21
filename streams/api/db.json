@@ -1,45 +1,22 @@
 {
   "streams": [
     {
-      "title": "my stream",
-      "description": "this is a great stram",
-      "id": 1
-    },
-    {
-      "title": "my stream",
-      "description": "this is a great stream",
-      "id": 2
-    },
-    {
-      "title": "my stream",
-      "description": "this is a great stream",
-      "id": 3
-    },
-    {
-      "title": "my stream",
-      "description": "this is a great stream",
-      "id": 4
-    },
-    {
-      "title": "my stream 2",
-      "description": "this is a great stream",
-      "id": 5
-    },
-    {
-      "title": "my stream",
-      "description": "a great stream",
-      "id": 6
-    },
-    {
-      "title": "Stream 11/01",
-      "description": "new stream 11/01",
-      "id": 7
-    },
-    {
       "title": "I created this stream",
       "description": "This was made by me",
       "userId": "109973825987938014737",
       "id": 8
+    },
+    {
+      "title": "Workspace stream",
+      "description": "thats my job",
+      "userId": "102442809330286313858",
+      "id": 9
+    },
+    {
+      "title": "stremyyyyy",
+      "description": "new",
+      "userId": "109973825987938014737",
+      "id": 10
     }
   ]
 }
