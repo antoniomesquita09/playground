@@ -22,15 +22,14 @@ class StreamList extends React.Component {
     renderList(){
         return this.props.streams.map(stream => {
             return (
-                <div className="media" key={stream.id}>
-                    <span className="glyphicon glyphicon-play-circle" alt=""></span>
-                    <div className="media-body right-aligned">
-                        <h5>{stream.title}</h5>
-                        <p>{stream.description}</p>
-                    </div>
-                    {this.renderAdmin(stream)}
+                <div className="list-group-item" key={stream.id}>
+                        <span className="glyphicon glyphicon-play-circle" alt=""></span>
+                        <div>
+                            <h5>{stream.title}</h5>
+                            <p>{stream.description}</p>
+                        </div>
+                        {this.renderAdmin(stream)}
                 </div>
-                
             );
         });
     }
@@ -51,10 +50,10 @@ class StreamList extends React.Component {
         return (
             <div>
                 <h2>Streams</h2>
-                <div className="container">{this.renderList()}</div>
+                <div className="list-group">{this.renderList()}</div>
                 <br />
                 <br />
-                <div className="container middle-aligned">
+                <div>
                 {this.renderCreate()}
                 </div>
             </div>

@@ -5,7 +5,7 @@ class UserHeader extends React.Component{
     render(){
         const { user } = this.props;
         if(!user){
-            return <i class="spinner loading icon"></i>;
+            return <i className="spinner loading icon"></i>;
         }
         return<div>{user.name}</div>;
     }

@@ -2,7 +2,7 @@
   "streams": [
     {
       "title": "I created this stream",
-      "description": "This was made by me",
+      "description": "this is refactoring // edit",
       "userId": "109973825987938014737",
       "id": 8
     },
@@ -14,9 +14,15 @@
     },
     {
       "title": "stremyyyyy",
-      "description": "new",
+      "description": "new edit",
       "userId": "109973825987938014737",
       "id": 10
+    },
+    {
+      "title": "This is a reused component",
+      "description": "Watch my refactored component",
+      "userId": "109973825987938014737",
+      "id": 11
     }
   ]
 }
