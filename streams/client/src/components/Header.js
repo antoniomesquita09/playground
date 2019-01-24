@@ -8,7 +8,7 @@ const Header = () => {
             <div className='container-fluid'>
                 <div className='navbar-header'>
                     <Link to='/' className='navbar-brand'>
-                    Streamy
+                    Tonin`s Streamy
                     </Link>
                 </div>
                 <ul className='nav navbar-nav'>
