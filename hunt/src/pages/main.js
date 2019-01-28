@@ -4,7 +4,7 @@ import api from '../services/api';
 
 export default class Main extends Component {
     static navigationOptions = {
-        title: "Tonin",
+        title: "Wave Hunter",
         headerStyle: {
             backgroundColor: '#000',
         },
@@ -27,8 +27,6 @@ export default class Main extends Component {
         const { docs, ...productInfo } = response.data;
 
         this.setState({ docs: [...this.state.docs, ...docs] , productInfo , page });
-
-        console.log(docs);
     }
     
     loadMore = () => {
