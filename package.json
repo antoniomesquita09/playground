@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/antoniomesquita09/playground/issues"
   },
-  "homepage": "https://github.com/antoniomesquita09/playground#readme"
+  "homepage": "https://github.com/antoniomesquita09/playground#readme",
+  "dependencies": {
+    "react-native-cli": "^2.0.1",
+    "react-native-gesture-handler": "^1.0.15"
+  }
 }
