@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import { View, Text, FlatList, TouchableOpacity, ScrollView, Dimensions } from 'react-native';
+import Amplify from 'aws-amplify';
+import 'react-native-vector-icons';
+import awsConfig from '../config/aws-exports';
 import api from '../services/api';
 import styles from './styles';
 
-export default class Main extends Component {
+Amplify.configure(awsConfig);
+
+import { withAuthenticator } from 'aws-amplify-react-native';
+
+class Main extends Component {
     static navigationOptions = {
         title: "Wave Hunter",
         headerStyle: {
@@ -83,3 +90,5 @@ export default class Main extends Component {
         );
     }
 }
+
+export default withAuthenticator(Main);
