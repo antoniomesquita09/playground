@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/antoniomesquita09/playground#readme",
   "dependencies": {
+    "lodash": "^4.17.11",
     "react-native-cli": "^2.0.1",
     "react-native-gesture-handler": "^1.0.15"
   }
